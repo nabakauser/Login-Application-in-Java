@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/uiTvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="96dp"
+        android:gravity="center_vertical"
+        android:text="@string/uiTvName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/uiEtUserName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:textSize="12sp"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/uiTvName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/uiTvName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/uiTvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center_vertical"
+        android:text="@string/uiTvEmail"
+        app:layout_constraintStart_toStartOf="@+id/uiTvName"
+        app:layout_constraintTop_toBottomOf="@+id/uiTvName" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/uiEtUserEmail"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/uiTvEmail"
+        app:layout_constraintEnd_toEndOf="@+id/uiEtUserName"
+        app:layout_constraintTop_toTopOf="@+id/uiTvEmail" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/uiTvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center_vertical"
+        android:text="@string/uiTvPassword"
+        app:layout_constraintStart_toStartOf="@id/uiTvEmail"
+        app:layout_constraintTop_toBottomOf="@id/uiTvEmail" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/uiEtPassword"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@id/uiTvPassword"
+        app:layout_constraintEnd_toEndOf="@id/uiEtUserEmail"
+        app:layout_constraintTop_toTopOf="@id/uiTvPassword" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/uiTvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center_vertical"
+        android:text="@string/uiTvGender"
+        app:layout_constraintStart_toStartOf="@id/uiTvPassword"
+        app:layout_constraintTop_toBottomOf="@id/uiTvPassword" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/uiSpinnerGender"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/uiTvGender"
+        app:layout_constraintTop_toTopOf="@id/uiTvGender"
+        app:layout_constraintEnd_toEndOf="@+id/uiEtPassword" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/uiButtonSubmit"
+        android:layout_width="164dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_edges"
+        android:text="@string/uiButtonSubmit"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toBottomOf="@id/uiTvGender"
+        app:layout_constraintStart_toStartOf="@id/uiTvGender"
+        app:layout_constraintEnd_toEndOf="@id/uiSpinnerGender" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

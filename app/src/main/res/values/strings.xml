@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="uiTvName">NAME</string>
+    <string name="uiTvEmail">EMAIL</string>
+    <string name="uiTvPassword">PASSWORD</string>
+    <string name="uiTvGender">GENDER</string>
+    <string name="uiButtonSubmit">Submit</string>
+    <string name="uiButtonLogout">LOGOUT</string>
+    <string-array name="genders">
+        <item> Male </item>
+        <item> Female </item>
+        <item> Transgender </item>
+    </string-array>
+</resources>
